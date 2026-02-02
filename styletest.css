@@ -1,14 +1,17 @@
 /* styletest.css */
 
 :root {
-  --linux-black: #222222;    /* Cuerpo de Tux */
-  --linux-white: #ffffff;    /* Panza de Tux */
-  --linux-yellow: #fca311;   /* El pico y las patas */
+  /* En lugar de nombres de colores, usamos nombres de FUNCION */
+  --linux-main-bg: black;      /* El fondo principal */
+  --linux-main-text: #ffffff;    /* El color de las letras */
+  --linux-accent-border: #fca311; /* El color de los bordes y detalles */
+  --linux-btn-primary: #fca311;  /* Color del botón principal */
+  --linux-btn-secondary: #444444; /* Color del botón secundario */
 }
 
 body {
-  background-color: var(--linux-black);
-  color: var(--linux-white);
+  background-color: var( --linux-main-bg);
+  color: var(--linux-main-text);
   font-family: "Courier New", monospace; /* A Linus le gusta el estilo terminal */
   display: flex;
   flex-direction: column;
@@ -19,8 +22,8 @@ body {
 }
 
 h1 {
-  color: var(--linux-yellow);
-  border-bottom: 2px solid var(--linux-yellow);
+  color: var(--linux-accent-border);
+  border-bottom: 2px solid var(--linux-btn-primary);
   padding-bottom: 10px;
 }
 
