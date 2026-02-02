@@ -1,0 +1,30 @@
+/* styletest.css */
+
+:root {
+  --linux-black: #222222;    /* Cuerpo de Tux */
+  --linux-white: #ffffff;    /* Panza de Tux */
+  --linux-yellow: #fca311;   /* El pico y las patas */
+}
+
+body {
+  background-color: var(--linux-black);
+  color: var(--linux-white);
+  font-family: "Courier New", monospace; /* A Linus le gusta el estilo terminal */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: var(--linux-yellow);
+  border-bottom: 2px solid var(--linux-yellow);
+  padding-bottom: 10px;
+}
+
+p {
+  font-style: italic;
+  opacity: 0.8;
+}
